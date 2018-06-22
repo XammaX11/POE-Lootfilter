@@ -139,7 +139,7 @@ Show
 
 Show   #teuer
 	Class Divination
-	BaseType Doctor "The Hoarder" "The Fiend" "The Saint's Treasure" "House of Mirrors" "The Wolven King's Bite" "The Dragon's Heart" "Mawr Blaidd" "The Queen" "The Artist" "The Sephirot" "Wealth and Power" "The Immortal" "The Last One Standing" "Time-Lost Relic" "Pride Before the Fall" "The Brittle Emperor" "The King's Heart" "The Valkyrie" "The Wind" "Bowyer's Dream" "The Celestial Justicar" "The Dapper Prodigy" "The Enlightened" "Abandoned Wealth" "Last Hope" "The Risk" Heterochromia "Chaotic Disposition" "The Cartographer" "The World Eater" "The Offering" "The Dreamer" "The Iron Bard" "The Jeweller's Boon" "Immortal Resolve" "The Master" "The Undaunted" "The Celestial Stone" "The Mayor" "The Hale Heart" "The Undisputed" "The Dreamland" "The Samurai's Eye" "The Professor" "Perfection" "Harmony of Souls" 
+	BaseType Doctor "The Hoarder" "The Fiend" "The Saint's Treasure" "House of Mirrors" "The Wolven King's Bite" "The Dragon's Heart" "Mawr Blaidd" "The Queen" "The Artist" "Wealth and Power" "The Immortal" "The Last One Standing" "Pride Before the Fall" "The King's Heart" "The Wind" "The Celestial Justicar" "Abandoned Wealth" Heterochromia "The World Eater" "The Iron Bard" "Immortal Resolve" "The Master" "The Undaunted" "The Celestial Stone" "The Mayor" "The Samurai's Eye"
 	SetFontSize 45
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 9 300
@@ -148,10 +148,10 @@ Show   #teuer
 
 Show   #verkaufbar
 	Class Divination
-	BaseType  "The Void"
+	BaseType  "The Void" "The Sephirot" "Time-Lost Relic" "The Brittle Emperor" "The Valkyrie" "Bowyer's Dream" "The Dapper Prodigy" "The Enlightened" "Last Hope" "The Risk" "Chaotic Disposition" "The Cartographer" "The Offering" "The Dreamer" "The Jeweller's Boon" "The Hale Heart" "The Undisputed" "The Dreamland" "The Professor" "Perfection" "Harmony of Souls" "Humility"
 	SetFontSize 45
-	SetBorderColor 74 230 58 255
-	PlayAlertSound 9 300
+	SetTextColor 215 25 0 255
+	PlayAlertSound 4 150
 	DisableDropSound
 
 Show
@@ -159,7 +159,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 45 175
 	SetBorderColor 74 230 58 255
-	PlayAlertSound 4 120
+	PlayAlertSound 4 100
 	DisableDropSound
 	
 Show
