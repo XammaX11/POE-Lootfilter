@@ -382,7 +382,6 @@ Show
 	SetTextColor 255 45 175
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 1 100
-	CustomAlertSound "Sounds Lootfliter\Baka.wav"
 	MinimapIcon 0 Yellow Triangle
 	PlayEffect Blue Temp
 	DisableDropSound
@@ -406,7 +405,6 @@ Show
 	SetTextColor 0 0 0
 	SetBackgroundColor 74 230 58 255
 	PlayAlertSound 8 300
-	CustomAlertSound "Sounds Lootfliter\Nightcore.wav"
 	PlayEffect White
 	MinimapIcon 0 Yellow Triangle
 	DisableDropSound
@@ -639,7 +637,6 @@ Show
 	Quality >= 21
 	Rarity = Unique
 	SetFontSize 45	
-	CustomAlertSound "Sounds Lootfliter\Tutturuu.wav"
 	DisableDropSound
 	
 Show
