@@ -2,6 +2,10 @@
 #Transparency 0%:  SetBackgroundColor 0 0 0 255
 #Transparency 100%: SetBackgroundColor 0 0 0 0
 
+#Beim Hide auch Sound ausmachen #Hide Sound
+
+
+
 #
 #  QUEST & EXTRA
 #
@@ -13,12 +17,14 @@ Show
 	SetTextColor 0 0 0
 	SetBackgroundColor 74 230 58 255
 	PlayAlertSound 8 280
+	MinimapIcon 0 Green Star
 	DisableDropSound
 
 Show
 	Class Quest
 	SetFontSize 45
 	SetTextColor 74 230 58 255
+	MinimapIcon 0 Green Star
 	DisableDropSound
 
 Show
@@ -27,6 +33,7 @@ Show
 	SetTextColor 0 0 0
 	SetBackgroundColor 74 230 58 255
 	PlayAlertSound 8 280
+	MinimapIcon 0 Green Star
 	DisableDropSound
 
 #
@@ -38,6 +45,7 @@ Show
 	SetFontSize 45
 	SetTextColor 74 230 58 255
 	PlayAlertSound 2 90
+	MinimapIcon 0 Green Circle
 	DisableDropSound
 
 Show
@@ -46,6 +54,7 @@ Show
 	SetTextColor 255 45 175
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 180
+	MinimapIcon 0 Green Circle
 	DisableDropSound
 
 Show
@@ -53,6 +62,22 @@ Show
 	SetFontSize 45
 	SetTextColor 74 230 58 255
 	PlayAlertSound 2 90
+	MinimapIcon 2 Green Circle
+	DisableDropSound
+
+#
+#  Veiled Mod
+#
+
+Show
+	Identified True
+	HasExplicitMod "Veil"
+	SetFontSize 45
+	SetBackgroundColor 75 75 75 200
+	SetBorderColor 74 230 58 255
+	MinimapIcon 2 Yellow Circle
+	PlayEffect Green Temp
+	PlayAlertSound 3 160
 	DisableDropSound
 	
 #
@@ -134,6 +159,7 @@ Show
 	SetTextColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 3 160
+	MinimapIcon 0 Brown Star
 	DisableDropSound
 
 Show
@@ -142,6 +168,7 @@ Show
 	SetFontSize 45
 	SetTextColor 255 45 175
 	PlayAlertSound 2 90
+	MinimapIcon 0 Brown Star
 	DisableDropSound
 
 Show
@@ -150,6 +177,7 @@ Show
 	SetTextColor 255 45 175
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 2 90
+	MinimapIcon 2 Brown Star
 	DisableDropSound
 	
 #
@@ -163,6 +191,7 @@ Show
 	SetBackgroundColor 44 44 44 
 	SetBorderColor 200 200 200
 	PlayAlertSound 7 180
+	MinimapIcon 0 Red Star
 	DisableDropSound
 
 Show
@@ -173,6 +202,7 @@ Show
 	SetBackgroundColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 8 280
+	MinimapIcon 0 Red Star
 	DisableDropSound
 
 #
@@ -198,10 +228,14 @@ Show   #verkaufbar
 	MinimapIcon 1 Brown Square
 	DisableDropSound
 	
-Hide #test
+Show #test
 	Class Divination
 	BaseType "The Wolf's Shadow" "The Carrion Crow" "Turn the Other Cheek" "Thunderous Skies" "The Warden" "The Rabid Rhoa" "The Opulent" "The Lunaris Priestess" "The Lover" "The Lich" "The King's Blade" "The Incantation" "The Betrayal" "Struck by Lightning" "Lantador's Lost Love" "Her Mask" "Dying Anguish" "Doedre's Madness" "A Mother's Parting Gift" "The Twins" "The Surgeon" "The Hermit" "Prosperity" "Cartographer's Delight" "Might is Right" "Assassin's Favour" "Destined to Crumble" "Anarchy's Price" "Mitts" "The Scarred Meadow" "Rats" "The Metalsmith's Gift" "The Ruthless Ceinture" "Tranquillity" "The Witch" "The Web" "The Watcher" "The Visionary" "The Sigil" "The Inoculated" "The Gladiator" "The Endurance" "The Dragon" "The Demoness" "The Battle Born" "The Army of Blood" "Light and Truth" "Death" "The Sword King's Salute" "The Scholar" "The Feast" "The Gentleman" "The Coming Storm" "Forbidden Power" "The Pack Leader" "The Oath" "The Forsaken" "The Darkest Dream" "The Wolverine" "The Tyrant" "The Traitor" "The Tower" "The Sun" "The Spoiled Prince" "The Soul" "The Siren" "The Road to Power" "The Poet" "The Pact" "The One With All" "The Mercenary" "The Lord in Black" "The Insatiable" "The Harvester" "The Formless Sea" "The Conduit" "The Calling" "The Body" "The Blazing Fire" "The Avenger" "The Aesthete" "Shard of Fate" "Merciless Armament" "Lysah's Respite" "Hunter's Resolve" "Hubris" "Hope" "Blessing of God" "Audacity" "Atziri's Arsenal" "The Standoff"
-	SetFontSize 40
+	SetFontSize 45
+	SetTextColor 255 45 175
+	SetBorderColor 74 230 58 255
+	PlayAlertSound 4 120  #Hide Sound
+	MinimapIcon 2 Brown Square
 	DisableDropSound
 	
 Show #reste
@@ -220,6 +254,7 @@ Show
 	SetTextColor 0 0 0
 	SetBackgroundColor 74 230 58 255 
 	PlayAlertSound 7 180 
+	MinimapIcon 0 Brown Square
 	DisableDropSound
 	
 #
@@ -233,6 +268,7 @@ Show	# wegen einem Fehler muss der hier oben
 	SetFontSize 45
 	SetTextColor 255 45 175
 	PlayAlertSound 2 90
+	MinimapIcon 1 Red Circle
 	DisableDropSound
 
 #   BESTIARY
@@ -244,6 +280,7 @@ Show
 	SetTextColor 255 45 175
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 160
+	MinimapIcon 2 Brown Circle
 	DisableDropSound
 	
 Show  
@@ -257,7 +294,7 @@ Show
 
 Hide  # Any Net
 	Class "Stackable Currency"
-	BaseType Net
+	BaseType "Net"
 	SetFontSize 35
 	DisableDropSound
 	
@@ -267,6 +304,7 @@ Show
 	Class Currency
 	BaseType "Chaos Shard" "Regal Shard" "Binding Shard"
 	SetFontSize 45
+	MinimapIcon 2 Yellow Triangle
 	DisableDropSound
 
 Show
@@ -275,24 +313,17 @@ Show
 	SetFontSize 45
 	SetTextColor 255 45 175
 	PlayAlertSound 2 90
+	MinimapIcon 1 Yellow Triangle
 	DisableDropSound
 
 Show
 	Class Currency
-	BaseType "Harbinger's Shard" "Ancient Shard" "Orb of Horizons" "Engineer's Orb"
+	BaseType "Harbinger's Shard" "Ancient Shard" "Orb of Horizons" "Engineer's Orb" "Ancient Orb" "Annulment Shard" "Harbinger's Orb"
 	SetFontSize 45
 	SetTextColor 255 45 175
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 1 100
-	DisableDropSound
-
-Show
-	Class Currency
-	BaseType "Ancient Orb" "Annulment Shard" "Harbinger's Orb"
-	SetFontSize 45
-	SetTextColor 0 0 0
-	SetBackgroundColor 74 230 58 255
-	PlayAlertSound 8 300
+	MinimapIcon 0 Yellow Triangle
 	DisableDropSound
 
 #   BREACH
@@ -305,6 +336,7 @@ Show
 	SetBackgroundColor 44 44 44 
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 180
+	MinimapIcon 0 Red Star
 	DisableDropSound
 	
 Show
@@ -315,6 +347,7 @@ Show
 	SetBackgroundColor 44 44 44 
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 180
+	MinimapIcon 0 Red Star
 	DisableDropSound
 	
 #   ESSENCE
@@ -328,6 +361,48 @@ Show
 	PlayAlertSound 7 180 
 	MinimapIcon 0 Green Hexagon
 	DisableDropSound
+	
+	
+#
+# Prophecies
+#
+
+#Show
+#	Class Currency
+#	BaseType "Monstrous Treasure" "The King's Path" "Fated Connections" "Trash to Treasure" "The Queen's Sacrifice"
+#	SetFontSize 45
+#	SetTextColor 130 25 255 255
+#	SetBorderColor 130 25 255 255
+#	SetBackgroundColor 255 255 255 255
+#	PlayAlertSound 6 300
+#	MinimapIcon 0 White Star
+#	PlayEffect White
+#	DisableDropSound
+
+#Show
+#	Class Currency
+#	BaseType "Twice Enchanted" "Cleanser of Sins" "Vaal Winds" "The Jeweller's Touch" "Wind and Thunder" "Song of the Sekhema" "Darktongue's Shriek" "A Vision of Ice and Fire"
+#	SetFontSize 45
+#	SetTextColor 255 255 255 255
+#	SetBorderColor 255 255 255 255
+#	SetBackgroundColor 159 15 213 255
+#	PlayAlertSound 1 300
+#	MinimapIcon 1 White Star
+#	PlayEffect White
+#	DisableDropSound
+
+Show
+	Class Currency
+	BaseType "Prophecy"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 159 15 213 255
+	PlayAlertSound 2 300
+	MinimapIcon 2 Red Star
+	PlayEffect Red
+	DisableDropSound
+
 	
 #
 #   CURRENCY
@@ -347,7 +422,7 @@ Hide
 	SetBackgroundColor 0 0 0 140
 	DisableDropSound
 
-Hide
+Show
 	Class Currency
 	BaseType "Armourer's Scrap" "Blacksmith's Whetstone" "Perandus Coin"
 	SetFontSize 45
@@ -361,7 +436,7 @@ Hide
 	SetBackgroundColor 0 0 0 140
 	DisableDropSound
 
-Hide
+Show
 	Class Currency
 	BaseType  "Orb of Transmutation" "Orb of Augmentation"
 	SetFontSize 45
@@ -387,10 +462,33 @@ Show
 	PlayEffect Blue Temp
 	DisableDropSound
 
+Show
+	Class Currency
+	BaseType "Cartographer's Chisel"
+	SetFontSize 45
+	SetTextColor 255 45 175
+	SetBorderColor 74 230 58 255
+	PlayAlertSound 1 100
+	CustomAlertSound "Sounds Lootfliter\Tutturuu.wav"
+	MinimapIcon 0 Yellow Triangle
+	PlayEffect Blue Temp
+	DisableDropSound
 	
 Show
 	Class Currency
-	BaseType "Cartographer's Sextant" "Orb of Regret" "Orb of Scouring" "Cartographer's Chisel" "Cartographer's Seal" "Unshaping Orb" "Master Cartographer's Sextant" "Master Cartographer's Seal" "Gemcutter's Prism" "Orb of Alchemy" "Silver Coin" "Regal Orb" "Jeweller's Orb" "Prophecy" "Orb of Alteration" "Orb of Annulment" "Divine Orb" "Vaal Orb" "Orb of Fusing"
+	BaseType "Apprentice Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Master Cartographer's Sextant"
+	SetFontSize 45
+	SetTextColor 255 45 175
+	SetBorderColor 74 230 58 255
+	PlayAlertSound 1 100
+	CustomAlertSound "Sounds Lootfliter\Arigatou.mp3"
+	MinimapIcon 0 Yellow Triangle
+	PlayEffect Blue Temp
+	DisableDropSound
+	
+Show
+	Class Currency
+	BaseType "Orb of Regret" "Orb of Scouring" "Cartographer's Seal" "Unshaping Orb" "Master Cartographer's Seal" "Gemcutter's Prism" "Orb of Alchemy" "Silver Coin" "Regal Orb" "Jeweller's Orb" "Prophecy" "Orb of Alteration" "Orb of Annulment" "Divine Orb" "Vaal Orb" "Orb of Fusing"
 	SetFontSize 45
 	SetTextColor 255 45 175
 	SetBorderColor 74 230 58 255
@@ -406,7 +504,7 @@ Show
 	SetTextColor 0 0 0
 	SetBackgroundColor 74 230 58 255
 	PlayAlertSound 8 300
-	CustomAlertSound "Sounds Lootfliter\Nightcore.wav"
+	CustomAlertSound "Sounds Lootfliter\Nightcore_halb.mp3"
 	PlayEffect White
 	MinimapIcon 0 Yellow Triangle
 	DisableDropSound
@@ -440,6 +538,7 @@ Show
 	SetBackgroundColor 44 44 44 
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 200
+	CustomAlertSound "Sounds Lootfliter\Poi.mp3"
 	PlayEffect Green
 	MinimapIcon 1 Green Circle
 	DisableDropSound
@@ -453,18 +552,20 @@ Show
 	SetBackgroundColor 44 44 44 
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 300
+	CustomAlertSound "Sounds Lootfliter\Poi.mp3"
 	PlayEffect Green
 	MinimapIcon 1 Green Circle
 	DisableDropSound
 
 Show
-	MapTier >= 11
 	Class Maps
+	MapTier >= 11
 	SetFontSize 45
 	SetTextColor 74 230 58 255
 	SetBackgroundColor 44 44 44
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 200
+	CustomAlertSound "Sounds Lootfliter\Poi.mp3"
 	MinimapIcon 1 Green Star
 	DisableDropSound
 
@@ -474,6 +575,7 @@ Show
 	SetBackgroundColor 44 44 44
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 100
+	CustomAlertSound "Sounds Lootfliter\Poi.mp3"
 	MinimapIcon 2 Blue Circle
 	DisableDropSound
 
@@ -484,6 +586,7 @@ Show
 	SetTextColor 255 45 175
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 180
+	MinimapIcon 0 Yellow Hexagon
 	DisableDropSound
 
 Show
@@ -492,7 +595,8 @@ Show
 	SetTextColor 255 45 175 
 	SetBackgroundColor 44 44 44
 	SetBorderColor 74 230 58 255 
-	PlayAlertSound 7 200 
+	PlayAlertSound 7 200
+	MinimapIcon 0 Yellow Hexagon
 	DisableDropSound
 
 #
@@ -506,6 +610,7 @@ Show # 21+ Quality Gems
 	SetTextColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 300
+	MinimapIcon 0 Blue Hexagon
 	DisableDropSound
 	
 Show # 21+ Level Gems
@@ -515,6 +620,7 @@ Show # 21+ Level Gems
 	SetTextColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 300
+	MinimapIcon 0 Blue Hexagon
 	DisableDropSound
 	
 	
@@ -525,6 +631,7 @@ Show
 	SetTextColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 300
+	MinimapIcon 1 Blue Hexagon
 	DisableDropSound
 	
 Show
@@ -534,6 +641,7 @@ Show
 	SetTextColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 7 100 
+	MinimapIcon 2 Blue Hexagon
 	DisableDropSound
 
 Show
@@ -542,10 +650,11 @@ Show
 	SetFontSize 45
 	SetTextColor 30 200 200 255
 	SetBorderColor 30 150 180 255    
-	PlayAlertSound 3 300   
+	PlayAlertSound 3 300 
+	MinimapIcon 2 Blue Circle
 	DisableDropSound
 	
-Show #Gems zum leveln
+Hide #Gems zum leveln
 	Class Gems
 	BaseType "Arctic Armour" "Haste" "Hatred" "Herald of Agony" "Herald of Ice" "Phase Run" "Purity of Ice" "Whirling Blades" "Summon Ice Golem" "Herald of Ash" "Immortal Call" "Leap Slam" "Molten Shell" "Purity of Fire" "Summon Flame Golem" "Vitality" "Warlord's Mark" "Clarity" "Discipline" "Flame Dash" "Herald of Thunder" "Lightning Warp" "Purity of Elements" "Purity of Lightning" "Summon Chaos Golem" "Summon Lightning Golem" "Anger" "Added Cold Damage Support" "Culling Strike Support" "Faster Attacks Support" "Greater Multiple Projectiles Support" "Hypothermia Support" "Ice Bite Support" "Mana Leech Support" "Onslaught Support" "Added Fire Damage Support" "Cast when Damage Taken Support" "Fortify Support" "Increased Duration Support" "Life Leech Support" "Added Lightning Damage Support" "Blasphemy Support" "Concentrated Effect Support" "Controlled Destruction Support" "Curse On Hit Support" "Elemental Focus Support" "Faster Casting Support" "Increased Area of Effect Support" "Increased Critical Damage Support" "Increased Critical Strikes Support" "Item Rarity Support" "Physical to Lightning Support" "Power Charge On Critical Support" "Spell Echo Support" 
 	ItemLevel <= 46
@@ -554,9 +663,7 @@ Show #Gems zum leveln
 Hide
 	Class Gem
 	BaseType Vaal
-	SetFontSize 18
-	SetTextColor 200 200 200 100
-	SetBackgroundColor 0 0 0 55
+	SetFontSize 35
 	DisableDropSound  
 
 Hide
@@ -581,17 +688,19 @@ Show
 	SetTextColor 0 0 0
 	SetBorderColor 255 45 175
 	PlayAlertSound 4 200
+	MinimapIcon 0 Blue Diamond
 	DisableDropSound
     
 Show
 	Class "Abyss Jewel"
 	Rarity = Magic 
-	ItemLevel >= 84
+	ItemLevel >= 83
 	SetFontSize 45
 	SetBackgroundColor 0 200 255 255
 	SetTextColor 0 0 0
 	SetBorderColor 255 45 175
 	PlayAlertSound 4 200
+	MinimapIcon 0 Blue Diamond
 	DisableDropSound
 	
 Show
@@ -601,6 +710,7 @@ Show
 	SetTextColor 255 255 119
 	SetBorderColor 255 45 175
 	PlayAlertSound 1 100
+	MinimapIcon 1 Blue Diamond
 	DisableDropSound
 	
 Show
@@ -610,9 +720,10 @@ Show
 	SetTextColor 255 255 119
 	SetBorderColor 255 45 175
 	PlayAlertSound 1 100
+	MinimapIcon 1 Blue Diamond
 	DisableDropSound
-
-Hide
+	
+Show
 	Class Jewel
 	Rarity = Magic
 	SetFontSize 45
@@ -629,6 +740,7 @@ Show
 	SetTextColor 74 230 58 255 
 	SetBorderColor 255 255 119
 	PlayAlertSound 7 180
+	MinimapIcon 0 Blue Diamond
 	DisableDropSound
 
 #
@@ -640,6 +752,7 @@ Show
 	Rarity = Unique
 	SetFontSize 45	
 	CustomAlertSound "Sounds Lootfliter\Tutturuu.wav"
+	MinimapIcon 0 Red Star
 	DisableDropSound
 	
 Show
@@ -661,6 +774,7 @@ Show
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 8 280
 	PlayEffect Green
+	MinimapIcon 0 White Star
 	DisableDropSound
 
 #
@@ -668,7 +782,7 @@ Show
 #
 	
 Show #Uniques sehr gut
-	BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Cedar Tower Shield" "Clasped Mitts" "Clutching Talisman" "Crusader Boots" "Cutlass" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Legion Gloves" "Occultist's Vestment" "Prophecy Wand" "Raven Mask" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Siege Axe" "Steelhead" "Vaal Spirit Shield" "Void Axe" "Wereclaw Talisman"
+	BaseType "Arcanist Slippers" "Callous Mask" "Carnal Sceptre" "Cedar Tower Shield" "Clasped Mitts" "Clutching Talisman" "Crusader Boots" "Cutlass" "Ezomyte Tower Shield" "Full Wyrmscale" "Gladiator Plate" "Glorious Plate" "Grand Mana Flask" "Greatwolf Talisman" "Legion Gloves" "Occultist's Vestment" "Raven Mask" "Rawhide Boots" "Rawhide Tower Shield" "Ritual Sceptre" "Rotfeather Talisman" "Royal Axe" "Ruby Flask" "Sanctified Life Flask" "Sanctified Mana Flask" "Sapphire Flask" "Siege Axe" "Steelhead" "Vaal Spirit Shield" "Void Axe" "Wereclaw Talisman"
 	Rarity Unique
 	SetFontSize 45
 	SetTextColor 175 96 37 255
@@ -727,6 +841,7 @@ Show
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 1 100
 	PlayEffect Yellow
+	MinimapIcon 0 Yellow Star
 	DisableDropSound
 
 #
@@ -740,7 +855,8 @@ Show
 	SetBackgroundColor 74 230 58 255
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 8 300 
-	PlayEffect Yellow
+	PlayEffect Yellow 
+	MinimapIcon 0 Yellow Star
 	DisableDropSound
 
 Show
@@ -751,6 +867,7 @@ Show
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 8 300
 	PlayEffect Yellow
+	MinimapIcon 0 Yellow Star
 	DisableDropSound
 
 Show
@@ -761,6 +878,7 @@ Show
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 3 160
 	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
 	DisableDropSound
 
 Show
@@ -771,6 +889,7 @@ Show
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 3 160
 	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
 	DisableDropSound
 	
 Show
@@ -782,6 +901,7 @@ Show
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 3 160
 	PlayEffect Yellow
+	MinimapIcon 2 Yellow Star
 	DisableDropSound
 	
 Show
@@ -793,6 +913,21 @@ Show
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 3 160
 	PlayEffect Yellow
+	MinimapIcon 2 Yellow Star
+	DisableDropSound
+
+Show
+	ElderItem True
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Star
+	DisableDropSound
+	
+Show
+	ShaperItem True
+	SetFontSize 35
+	PlayEffect Yellow
+	MinimapIcon 0 Yellow Star
 	DisableDropSound
 	
 #
@@ -807,6 +942,7 @@ Show
 	SetBorderColor 255 45 175
 	PlayAlertSound 8 300
 	PlayEffect Yellow
+	MinimapIcon 0 Yellow Star
 	DisableDropSound
 	
 Show
@@ -815,11 +951,35 @@ Show
 	SetFontSize 45
 	PlayAlertSound 1 100
 	PlayEffect Yellow
+	MinimapIcon 1 Yellow Star
 	DisableDropSound
 	
 #
 # Craft
 #
+
+Hide
+	Class Belt
+	BaseType "Leather Belt"
+	Rarity Normal
+	SetFontSize 45
+	DisableDropSound
+	
+Hide
+	Class Amulet
+	BaseType "Gold Amulet"
+	Rarity Normal
+	SetFontSize 45
+	DisableDropSound
+	
+Show
+	Class "One Hand Maces"
+	BaseType "Stone Hammer" "Rock Breaker" "Gavel"
+	Quality >= 20
+	SetFontSize 45
+	PlayEffect Blue
+	PlayAlertSound 1 100
+	DisableDropSound
 	
 Show
 	Class Ring
@@ -828,6 +988,7 @@ Show
 	SetBackgroundColor 74 230 58 255
 	PlayAlertSound 8 300
 	PlayEffect White
+	MinimapIcon 0 White Star
 	DisableDropSound
 
 Show  
@@ -837,10 +998,11 @@ Show
 	SetFontSize 45
 	SetBorderColor 74 230 58 255
 	PlayAlertSound 8 300
-	PlayEffect Yellow
+	PlayEffect White
+	MinimapIcon 1 White Star
 	DisableDropSound
 		
-Hide
+Show
 	Class Gloves
 	BaseType "Spiked Gloves" "Fingerless Silk Gloves" "Gripped Gloves"
 	Rarity = Rare
@@ -848,7 +1010,7 @@ Hide
 	SetBorderColor 74 230 58 255
 	DisableDropSound
 
-Hide
+Show
 	Class Boots
 	BaseType "Two-Toned Boots"
 	Rarity = Rare
@@ -856,28 +1018,22 @@ Hide
 	SetBorderColor 74 230 58 255
 	DisableDropSound
 
-Hide
-	Class "Body Armour" Helmet Gloves Boots
-	BaseType "Astral Plate" "Dragonscale Gauntlets" "Sorcerer Gloves" "Slink Gloves" "Titan Gauntlets" "Dragonscale Boots" "Sorcerer Boots" "Slink Boots" "Titan Greaves" "Nightmare Bascinet" "Hubris Circlet" "Lion Pelt" "Eternal Burgonet"
-	Rarity = Rare
-	ItemLevel >= 68
-	SetFontSize 40
-	DisableDropSound
-
 #
 #  Ventor Recepi
 #
 
-Hide
+Show
 	Class Amulet Ring
 	Rarity = Rare 
 	SetFontSize 45
 	SetBorderColor 255 255 255 255 #Weiß
 	SetBackgroundColor 255 255 255 150 #Weiß
 	SetTextColor 0 0 0 
+	PlayEffect White
+	MinimapIcon 1 White Star
 	DisableDropSound
 
-Hide
+Show
 	Class  Belt
 	BaseType "Leather Belt" "Rustic Sash" "Crystal Belt"
 	Rarity = Rare 
@@ -887,6 +1043,7 @@ Hide
 Hide
 	Class  Belt
 	Rarity = Rare 
+	ItemLevel >= 60
 	Identified False
 	SetFontSize 45
 	DisableDropSound
@@ -967,30 +1124,29 @@ Hide
 # Leveling Items
 #
 
-Show
-	Class Helmet Boots Gloves
-	LinkedSockets = 4
-	ItemLevel < 46
-	SetFontSize 45
-	SetBorderColor 255 255 255 255 #Weiß
-	SetBackgroundColor 255 255 255 150 #Weiß
-	SetTextColor 0 0 0 
-	DisableDropSound
+#Show
+#	Class Helmet Boots Gloves
+#	LinkedSockets = 4
+#	ItemLevel < 46
+#	SetFontSize 45
+#	SetBorderColor 255 255 255 255 #Weiß
+#	SetBackgroundColor 255 255 255 150 #Weiß
+#	SetTextColor 0 0 0 
+#	DisableDropSound
 	
-Show
-	Rarity = Rare 
-	Height = 3
-	Width = 1
-	LinkedSockets = 3
-	ItemLevel < 46
-	SetFontSize 45
-	SetBorderColor 215 25 0 255 #Rot
+#Show
+#	Rarity = Rare 
+#	Height = 3
+#	Width = 1
+#	LinkedSockets = 3
+#	ItemLevel < 46
+#	SetFontSize 45
+#	SetBorderColor 215 25 0 255 #Rot
 	
 	
-Show
-	Rarity = Rare
-	ItemLevel < 46
-	SetFontSize 35
+#Show
+#	Rarity = Rare
+#	SetFontSize 40
 
 #
 #   FLASKS
